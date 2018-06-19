@@ -5,3 +5,8 @@ pom.xml.releaseBackup
 .project
 .classpath
 .DS_Store
+.idea
+**/bin/*
+*.iml
+*.class
+git.properties

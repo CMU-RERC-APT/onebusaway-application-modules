@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2011 Brian Ferris <bdferris@onebusaway.org>
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop"
   xsi:schemaLocation="
@@ -23,20 +40,34 @@
     <property name="key" value="TEST"/>
   </bean>
 
+  <!-- iOS Client -->
   <bean class="org.onebusaway.users.impl.CreateApiKeyAction">
     <property name="key" value="org.onebusaway.iphone"/>
   </bean>
 
+  <!-- Android Client -->
   <bean class="org.onebusaway.users.impl.CreateApiKeyAction">
     <property name="key" value="v1_BktoDJ2gJlu6nLM6LsT9H8IUbWc=cGF1bGN3YXR0c0BnbWFpbC5jb20="/>
   </bean>
 
+  <!-- Windows Phone Client -->
   <bean class="org.onebusaway.users.impl.CreateApiKeyAction">
     <property name="key" value="v1_C5+aiesgg8DxpmG1yS2F/pj2zHk=c3BoZW5yeUBnbWFpbC5jb20=="/>
   </bean>
 
+  <!-- Windows 8 Client -->
   <bean class="org.onebusaway.users.impl.CreateApiKeyAction">
     <property name="key" value="693c0a55-9ef0-4302-8bc3-f9b2db93e124"/>
+  </bean>
+
+  <!-- Alexa Skill -->
+  <bean class="org.onebusaway.users.impl.CreateApiKeyAction">
+    <property name="key" value="e5c0e97a-729d-4fdb-a3ca-2fccb20ac3ab"/>
+  </bean>
+
+  <!-- Pebble Smartwatch -->
+  <bean class="org.onebusaway.users.impl.CreateApiKeyAction">
+    <property name="key" value="48d59e79-ed33-4be0-9db3-912f8f521fec"/>
   </bean>
 
   <bean id="externalGeocoderImpl" class="org.onebusaway.geocoder.impl.DatabaseCachingGeocoderImpl">

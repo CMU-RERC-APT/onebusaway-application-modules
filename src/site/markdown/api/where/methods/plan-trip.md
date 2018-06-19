@@ -1,14 +1,16 @@
 [Back to API parent page](../index.html)
 
-# Method: plan-trip
+# ~~Method: plan-trip~~
 
-<font color="red"><b>This method is currently in BETA and SUBJECT TO CHANGE.</b></font>
+~~This method allows you to plan a trip using public transit between locations.  Detailed information about the sequence of steps for the trip, including walking and transit, are included in the response.  A variety of parameters can be used to control which trip plans are favored in a particular request.~~
 
-This method allows you to plan a trip using public transit between locations.  Detailed information about the sequence of steps for the trip, including walking and transit, are included in the response.  A variety of parameters can be used to control which trip plans are favored in a particular request.
+**This method is deprecated and no longer supported**
+
+Check out the [OpenTripPlanner](http://www.opentripplanner.org/) open-source project for multimodal trip planning capabilities.
 
 ## Sample Request
 
-http://soak-api.pugetsound.onebusaway.org/api/where/plan-trip.xml?key=TEST&latFrom=47.669940&lonFrom=-122.387958&latTo=47.598941&lonTo=-122.331138&time=2011-01-31_12-48-00
+http://soak-api.pugetsound.onebusaway.org/api/where/plan-trip.xml?key=TEST&amp;latFrom=47.669940&amp;lonFrom=-122.387958&amp;latTo=47.598941&amp;lonTo=-122.331138&amp;time=2011-01-31_12-48-00
 
 ## Sample Response
 
